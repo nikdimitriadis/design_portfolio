@@ -1,21 +1,10 @@
 // welcome text script
+console.log("script");
 const welcome = document.querySelector(".js-text");
 const blink = document.querySelector(".blink");
 const leksis = ["Web Developer", "from another planet"];
 let count = 0;
 let index = 0;
-
-// console.log(factorial(10000));
-
-// function factorial(n) {
-//   if (n < 0) {
-//     return -1;
-//   } else if (n == 0) {
-//     return 1;
-//   } else {
-//     return n * factorial(n - 1);
-//   }
-// }
 
 function test() {
   welcome.innerText = leksis[count].slice(0, ++index);
@@ -56,8 +45,6 @@ let maxWords = 150;
 
 textarea.addEventListener("input", () => {
   textvalue = textarea.value;
-  // console.log(textvalue.length);
-  // console.log(textvalue);
   remainWords.innerText = ` Remaining charachters:  ${
     maxWords - textvalue.length
   }`;
